@@ -90,27 +90,6 @@ const HeroSection = () => {
               </a>
             </div>
 
-            {/* Trust indicators */}
-            <div 
-              className={`mt-16 pt-16 border-t border-gold/10 ${
-                mounted ? 'animate-fade-up delay-400' : 'opacity-0'
-              }`}
-            >
-                <div className="flex justify-center lg:justify-start gap-12">
-                <div className="text-center">
-                  <p className="text-3xl font-serif font-bold text-primary">5+</p>
-                  <p className="text-xs text-muted-foreground mt-1">Years Experience</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-serif font-bold text-primary">50+</p>
-                  <p className="text-xs text-muted-foreground mt-1">Happy Clients</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-serif font-bold text-primary">100%</p>
-                  <p className="text-xs text-muted-foreground mt-1">Compliance Rate</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Image */}

@@ -4,19 +4,16 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Sarah Mitchell",
-    role: "Founder, TechStart Ltd",
     content: "Vinsight transformed our financial operations. Their attention to detail and proactive approach saved us thousands in our first year.",
     rating: 5,
   },
   {
     name: "James Thompson",
-    role: "Director, Bristol Retail Group",
     content: "Professional, responsive, and genuinely invested in our success. The best accounting decision we ever made.",
     rating: 5,
   },
   {
     name: "Emma Richards",
-    role: "CEO, Creative Agency UK",
     content: "From company incorporation to ongoing accounts, Vinsight has been exceptional. Their expertise in tax optimization is unmatched.",
     rating: 5,
   },
@@ -85,7 +82,6 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
 

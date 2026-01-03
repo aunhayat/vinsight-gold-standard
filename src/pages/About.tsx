@@ -30,9 +30,9 @@ const values = [
 ];
 
 const highlights = [
-  { number: "25+", label: "Years of Combined Experience" },
-  { number: "500+", label: "LTD Companies Supported" },
-  { number: "100%", label: "Compliance Track Record" },
+  { number: "5+", label: "Years of Experience" },
+  { number: "50+", label: "Happy Clients" },
+  { number: "100%", label: "Compliance Rate" },
 ];
 
 const About = () => {
