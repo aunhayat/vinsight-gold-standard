@@ -96,16 +96,16 @@ const HeroSection = () => {
                 mounted ? 'animate-fade-up delay-400' : 'opacity-0'
               }`}
             >
-              <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto lg:mx-0">
-                <div className="text-center lg:text-left">
-                  <p className="text-3xl font-serif font-bold text-primary">25+</p>
+                <div className="flex justify-center lg:justify-start gap-12">
+                <div className="text-center">
+                  <p className="text-3xl font-serif font-bold text-primary">5+</p>
                   <p className="text-xs text-muted-foreground mt-1">Years Experience</p>
                 </div>
-                <div className="text-center lg:text-left">
-                  <p className="text-3xl font-serif font-bold text-primary">500+</p>
+                <div className="text-center">
+                  <p className="text-3xl font-serif font-bold text-primary">50+</p>
                   <p className="text-xs text-muted-foreground mt-1">Happy Clients</p>
                 </div>
-                <div className="text-center lg:text-left">
+                <div className="text-center">
                   <p className="text-3xl font-serif font-bold text-primary">100%</p>
                   <p className="text-xs text-muted-foreground mt-1">Compliance Rate</p>
                 </div>
@@ -119,15 +119,17 @@ const HeroSection = () => {
               mounted ? 'animate-fade-up delay-300' : 'opacity-0'
             }`}
           >
-            <div className="relative rounded-2xl overflow-hidden border border-gold/20 gold-glow">
+            <div className="relative rounded-2xl overflow-hidden border border-gold/20 gold-glow group cursor-pointer">
               <img 
                 src={accountingImage} 
                 alt="Professional accountants working together" 
-                className="w-full h-auto object-cover aspect-[4/3]"
+                className="w-full h-auto object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-110"
               />
               {/* Gold overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent transition-opacity duration-300 group-hover:opacity-70" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent transition-opacity duration-300 group-hover:from-primary/15" />
+              {/* Hover glow effect */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-tr from-primary/10 via-transparent to-primary/5" />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 border border-gold/20 rounded-2xl -z-10" />
