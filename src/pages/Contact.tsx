@@ -8,6 +8,7 @@ import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
+
 const Contact = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
   const [mounted, setMounted] = useState(false);
@@ -27,24 +28,39 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
-    );
-    const mailtoLink = `mailto:mian.h@vinsightaccountants.co.uk?subject=${subject}&body=${body}`;
-
-    // Open email client
-    window.location.href = mailtoLink;
-
-    // Show success toast
-    toast.success("Opening your email client...", {
-      description: "Please send the email to complete your inquiry.",
-    });
-
-    setIsSubmitting(false);
-  };
+  
+    try {
+      const res = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!res.ok) {
+        throw new Error("Failed to send message");
+      }
+  
+      toast.success("Message sent successfully!", {
+        description: "We’ll get back to you shortly.",
+      });
+  
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message", {
+        description: "Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
