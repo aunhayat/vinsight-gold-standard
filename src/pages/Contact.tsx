@@ -30,7 +30,7 @@ const Contact = () => {
     setIsSubmitting(true);
   
     try {
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch("https://vinsight-backend.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
