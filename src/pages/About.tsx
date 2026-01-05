@@ -29,16 +29,11 @@ const values = [
   },
 ];
 
-const highlights = [
-  { number: "5+", label: "Years of Experience" },
-  { number: "50+", label: "Happy Clients" },
-  { number: "100%", label: "Compliance Rate" },
-];
+
 
 const About = () => {
   const { ref: missionRef, isVisible: missionVisible } = useScrollAnimation({ threshold: 0.2 });
   const { ref: valuesRef, isVisible: valuesVisible } = useScrollAnimation({ threshold: 0.1 });
-  const { ref: highlightsRef, isVisible: highlightsVisible } = useScrollAnimation({ threshold: 0.2 });
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -158,57 +153,6 @@ const About = () => {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Experience Highlights */}
-      <section className="py-24 bg-secondary/30" ref={highlightsRef}>
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16">
-            <span 
-              className={`text-primary text-sm tracking-widest uppercase ${
-                highlightsVisible ? 'animate-fade-up' : 'opacity-0'
-              }`}
-            >
-              Experience
-            </span>
-            <h2 
-              className={`text-3xl md:text-4xl font-serif font-bold mt-4 ${
-                highlightsVisible ? 'animate-fade-up delay-100' : 'opacity-0'
-              }`}
-            >
-              Proven <span className="gold-gradient-text">Track Record</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {highlights.map((highlight, index) => (
-              <div
-                key={highlight.label}
-                className={`text-center p-8 rounded-xl bg-card border border-gold/10 ${
-                  highlightsVisible ? `animate-fade-up delay-${(index + 2) * 100}` : 'opacity-0'
-                }`}
-              >
-                <p className="text-4xl md:text-5xl font-serif font-bold gold-gradient-text mb-3">
-                  {highlight.number}
-                </p>
-                <p className="text-muted-foreground text-sm">
-                  {highlight.label}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div 
-            className={`text-center mt-12 ${
-              highlightsVisible ? 'animate-fade-up delay-500' : 'opacity-0'
-            }`}
-          >
-            <p className="text-muted-foreground mb-2">Our expertise spans:</p>
-            <p className="text-foreground">
-              VAT • Corporation Tax • Bookkeeping • Start-up Advisory
-            </p>
           </div>
         </div>
       </section>
