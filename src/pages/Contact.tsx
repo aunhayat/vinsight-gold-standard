@@ -143,7 +143,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="tel:+447453420883"
+                  href="tel:01174634336"
                   className="flex items-start gap-4 p-5 rounded-xl bg-card border border-gold/10 hover:border-gold/30 transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -151,7 +151,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Call Us</h3>
-                    <p className="text-muted-foreground text-sm">+44 7453 420883</p>
+                    <p className="text-muted-foreground text-sm">01174634336</p>
                   </div>
                 </a>
 
