@@ -71,18 +71,18 @@ const Footer = () => {
             <h4 className="font-serif text-lg text-primary mb-6">Contact Us</h4>
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:mian.h@vinsightaccountants.co.uk"
+                href="mailto:info@vinsightaccountancy.co.uk"
                 className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors text-sm group"
               >
                 <Mail className="w-4 h-4 mt-0.5 text-primary" />
-                <span>mian.h@vinsightaccountants.co.uk</span>
+                <span>info@vinsightaccountancy.co.uk</span>
               </a>
               <a
-                href="tel:+447453420883"
+                href="tel:01174634336"
                 className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors text-sm"
               >
                 <Phone className="w-4 h-4 mt-0.5 text-primary" />
-                <span>+44 7453 420883</span>
+                <span>01174634336</span>
               </a>
               <div className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />

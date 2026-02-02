@@ -130,7 +130,7 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <a
-                  href="mailto:mian.h@vinsightaccountants.co.uk"
+                  href="mailto:info@vinsightaccountancy.co.uk"
                   className="flex items-start gap-4 p-5 rounded-xl bg-card border border-gold/10 hover:border-gold/30 transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -138,7 +138,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Email Us</h3>
-                    <p className="text-muted-foreground text-sm">mian.h@vinsightaccountants.co.uk</p>
+                    <p className="text-muted-foreground text-sm">info@vinsightaccountancy.co.uk</p>
                   </div>
                 </a>
 

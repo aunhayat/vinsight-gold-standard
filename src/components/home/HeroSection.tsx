@@ -82,7 +82,7 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <a href="tel:+447453420883">
+              <a href="tel:01174634336">
                 <Button variant="luxuryOutline" size="xl">
                   <Phone className="w-5 h-5" />
                   Call Now

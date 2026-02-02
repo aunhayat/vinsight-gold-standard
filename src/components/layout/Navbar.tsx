@@ -64,11 +64,11 @@ const Navbar = () => {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+447453420883"
+              href="tel:01174634336"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>+44 7453 420883</span>
+              <span>01174634336</span>
             </a>
             <Link to="/contact">
               <Button variant="luxury" size="sm">
@@ -106,11 +106,11 @@ const Navbar = () => {
               ))}
               <div className="pt-4 border-t border-gold/10">
                 <a
-                  href="tel:+447453420883"
+                  href="tel:01174634336"
                   className="flex items-center gap-2 text-muted-foreground mb-4"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>+44 7453 420883</span>
+                  <span>01174634336</span>
                 </a>
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   <Button variant="luxury" className="w-full">
