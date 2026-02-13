@@ -49,9 +49,19 @@ const Services = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    document.title = "Our Services | Vinsight Accountants UK";
+  
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Explore our UK accounting services including company formation, bookkeeping, VAT returns, corporation tax, payroll, annual accounts, and expert financial advisory services."
+      );
+    }
+  
     window.scrollTo(0, 0);
   }, []);
+  
 
   return (
     <main className="min-h-screen bg-background">

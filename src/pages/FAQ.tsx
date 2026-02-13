@@ -39,9 +39,19 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   useEffect(() => {
-    setMounted(true);
+    document.title = "FAQ | Vinsight Accountants UK";
+  
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Find answers to frequently asked questions about bookkeeping, VAT, tax returns, company formation, and accounting services offered by Vinsight Accountants in the UK."
+      );
+    }
+  
     window.scrollTo(0, 0);
   }, []);
+  
 
   return (
     <main className="min-h-screen bg-background">

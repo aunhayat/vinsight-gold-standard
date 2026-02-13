@@ -37,10 +37,19 @@ const About = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    document.title = "Who We Are | Vinsight Accountants UK";
+  
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Learn about Vinsight Accountants, a premium UK accounting firm providing bookkeeping, VAT services, tax planning, and financial advisory with exceptional precision."
+      );
+    }
+  
     window.scrollTo(0, 0);
   }, []);
-
+  
   return (
     <main className="min-h-screen bg-background">
       <Navbar />

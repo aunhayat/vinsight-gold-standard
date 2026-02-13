@@ -21,9 +21,20 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
+    document.title = "Contact Us | Vinsight Accountants – Expert UK Accounting Services";
+  
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Contact Vinsight Accountants in the UK for professional bookkeeping, VAT returns, corporation tax, annual accounts, and business advisory services. Get expert support tailored to your business needs."
+      );
+    }
+  
     setMounted(true);
     window.scrollTo(0, 0);
   }, []);
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
