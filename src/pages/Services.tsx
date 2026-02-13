@@ -59,6 +59,7 @@ const Services = () => {
       );
     }
   
+    setMounted(true);
     window.scrollTo(0, 0);
   }, []);
   
