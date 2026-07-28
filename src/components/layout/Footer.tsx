@@ -86,7 +86,7 @@ const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>Henleaze House, 21 Harbury Road, Bristol</span>
+                <span>3rd Floor Old Stock Exchange, St Nicholas Street, Bristol, United Kingdom, BS1 1TG</span>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         <div className="luxury-divider mt-12 mb-8" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Vinsight Accountants. All rights reserved.
+            © {new Date().getFullYear()} Vinsight Accountants Limited is a registered limited company in England and Wales with company number 17336010. All rights reserved.
           </p>
           <p className="text-muted-foreground text-xs">
             Precision in every number. Excellence in every service.
