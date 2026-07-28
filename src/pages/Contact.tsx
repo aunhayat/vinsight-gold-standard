@@ -188,8 +188,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Our Office</h3>
                     <p className="text-muted-foreground text-sm">
-                      Henleaze House, 21 Harbury Road<br />
-                      Bristol, United Kingdom
+                      3rd Floor, Old Stock Exchange, St Nicholas St<br />
+                      Bristol BS1 1TG, United Kingdom
                     </p>
                   </div>
                 </div>
