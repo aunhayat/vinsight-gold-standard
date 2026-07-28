@@ -96,7 +96,7 @@ const Footer = () => {
         <div className="luxury-divider mt-12 mb-8" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Vinsight Accountants Limited (Registered in England and Wales with company number 17336010).</br> All rights reserved.
+            © {new Date().getFullYear()} Vinsight Accountants Limited (Registered in England and Wales with company number 17336010).<br> All rights reserved.
           </p>
           <p className="text-muted-foreground text-xs">
             Precision in every number. Excellence in every service.
