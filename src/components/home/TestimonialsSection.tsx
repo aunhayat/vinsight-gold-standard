@@ -3,18 +3,18 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
-    content: "Vinsight transformed our financial operations. Their attention to detail and proactive approach saved us thousands in our first year.",
+    name: "Zahoor Iqbal (Company Director)",
+    content: "Mian and his team have helped me with my personal and business tax returns, always making things simple to understand and follow. Never hesitate to answer any queries at any times.",
     rating: 5,
   },
   {
-    name: "James Thompson",
-    content: "Professional, responsive, and genuinely invested in our success. The best accounting decision we ever made.",
+    name: "Scott Finden (Sole Trader)",
+    content: "We have only been with Vinsight accountants a short while but already I feel like they are more organised, helpful and more efficient that any accountant we have worked with.",
     rating: 5,
   },
   {
-    name: "Emma Richards",
-    content: "From company incorporation to ongoing accounts, Vinsight has been exceptional. Their expertise in tax optimization is unmatched.",
+    name: "Harry Tokley (Company Director)",
+    content: "They are good people along with being best in their work. Mian and his team are very responsive and supportive all along.",
     rating: 5,
   },
 ];
